@@ -1,0 +1,4 @@
+Flask>=2.0
+Werkzeug>=2.0
+music21>=6.0
+pyFluidSynth>=1.3

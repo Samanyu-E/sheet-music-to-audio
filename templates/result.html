@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download Your WAV</title>
+    <!--Style-->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 480px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .link-box {
+            margin-top: 1rem;
+        }
+
+            .link-box a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 0.6rem 1.2rem;
+                font-size: 1rem;
+                background-color: #4a90e2;
+                color: #fff;
+                border-radius: 4px;
+                transition: background-color 0.2s;
+            }
+
+                .link-box a:hover {
+                    background-color: #357ab8;
+                }
+
+        .note {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .link-box a {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Message and download button -->
+        <div class="link-box">
+            <h2>Your WAV File is Ready!</h2>
+            <a href="{{ url_for('download_file', subdir=subdir, filename=filename) }}" download>Download WAV File</a>
+        </div>
+        <p class="note">If the download doesn't start automatically, click the button above.</p>
+    </div>
+</body>
+</html>
