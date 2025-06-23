@@ -1,10 +1,27 @@
-### Open Source Tools Used
+**Open Source Tools Used**
 
-This project leverages the power of open source software:
+1. **Audiveris**
+   - Purpose: Used for Optical Music Recognition (OMR) from scanned sheet music.
+   - Source: https://github.com/Audiveris/audiveris
+   - License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+   - Copyright (C) 2007 Free Software Foundation, Inc.
 
-- [Audiveris](https://github.com/Audiveris/audiveris) - Optical Music Recognition engine used to convert scanned sheet music into MusicXML.
-- [Fluid (R3) SoundFont](https://member.keymusician.com/Member/FluidR3_GM/index.html) - High quality General MIDI SoundFont used for audio synthesis.
+2. **FluidR3 GM SoundFont**
+   - Purpose: General MIDI SoundFont used for audio synthesis from MIDI files.
+   - Source: https://member.keymusician.com/Member/FluidR3_GM/
+   - License: MIT license
+   - Copyright (c) 2000-2002, 2008, 2013 Frank Wen
 
-These tools are included as external components and were not modified. Please refer to their respective licenses for full usage details.
+_________________________________________________________________________________________________________________________________________
 
-Note: Due to file size limitations, the FluidR3_GM.sf2 file is not included in this repository. To use this program, please download the FluidR3_GM.sf2 from the link above and place it in the soundfont/ directory.
+**License Compliance Notes:**
+
+- This project **does not modify** the source code of Audiveris.
+- The Audiveris tool is used externally via its command-line interface (`audiveris.bat`). Audiveris files used under omr/ directory.
+- The FluidR3 SoundFont is used solely for MIDI-to-audio conversion via FluidSynth. FluidR3 SoundFont files used under soundfont/ directory.
+- All third-party components retain their original licenses, terms, and copyright.
+- This NOTICE file, the `LICENSE` file (MIT), and `licenses/` directory (if included) provide full attribution.
+
+_________________________________________________________________________________________________________________________________________
+
+MIT License applies to all other original components in this repository written by Samanyu Earna.
