@@ -4,13 +4,13 @@
    - Purpose: Used for Optical Music Recognition (OMR) from scanned sheet music.
    - Source: https://github.com/Audiveris/audiveris
    - License: Apache License, Version 2.0
-   - Copyright (C) 2007 Free Software Foundation, Inc.
+   - Copyright © 2015-2021 Free Software Foundation, Inc.
 
 2. **FluidR3 GM SoundFont**
    - Purpose: General MIDI SoundFont used for audio synthesis from MIDI files.
    - Source: https://member.keymusician.com/Member/FluidR3_GM/
    - License: MIT license
-   - Copyright (c) 2000-2002, 2008, 2013 Frank Wen
+   - Copyright © 2000-2002, 2008, 2013 Frank Wen
 
 _________________________________________________________________________________________________________________________________________
 
