@@ -3,7 +3,7 @@
 1. **Audiveris**
    - Purpose: Used for Optical Music Recognition (OMR) from scanned sheet music.
    - Source: https://github.com/Audiveris/audiveris
-   - License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+   - License: Apache License, Version 2.0
    - Copyright (C) 2007 Free Software Foundation, Inc.
 
 2. **FluidR3 GM SoundFont**
