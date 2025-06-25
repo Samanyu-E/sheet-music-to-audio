@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 # 5. Run the app
 python main.py
-
+```bash
 # 6. Open browser at:
 http://localhost:8000
 💡 Features
