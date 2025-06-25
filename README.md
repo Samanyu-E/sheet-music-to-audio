@@ -5,17 +5,6 @@
 <h1 align="center">Sheet Music to Audio</h1>  
 
 <p align="center">  
-  <a href="https://github.com/Samanyu-E/sheet-music-to-audio/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/Samanyu-E/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status">
-  </a> 
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-  </a>
-</p>  
-
----
-
-<p align="center">  
   <img src="docs/demo.gif" alt="Demo" width="75%"/>  
 </p>  
 
