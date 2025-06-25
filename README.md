@@ -58,9 +58,13 @@ Create & activate virtualenv
 
 ```
 python -m venv venv
+```
 # macOS/Linux
+```
 source venv/bin/activate
+```
 # Windows
+```
 venv\Scripts\activate
 ```
 
