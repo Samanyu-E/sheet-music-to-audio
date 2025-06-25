@@ -5,8 +5,8 @@
 <h1 align="center">Sheet Music to Audio</h1>  
 
 <p align="center">  
-  <a href="https://github.com/samanyu-e/sheet-music-to-audio/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/samanyu-e/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status">
+  <a href="https://github.com/Samanyu-E/sheet-music-to-audio/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/Samanyu-E/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status">
   </a> 
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
@@ -36,9 +36,6 @@
 
 * **Instrument Picker**
   Choose from **128** General MIDI instruments (piano, strings, brass, leads…).
-
-* **Responsive UI**
-  Mobile-friendly upload form and download page.
 
 ---
 
@@ -71,10 +68,10 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-Verify external tools:
+**Verify external tools:**
 
-* Audiveris CLI in `./audiveris/bin/audiveris.bat`
-* FluidSynth installed on your system
+* Audiveris CLI in `./omr/bin/audiveris.bat`
+* pyfluidSynth installed on your system
 * `FluidR3_GM.sf2` in `./soundfont/`
 
 **Run the web server**
@@ -92,7 +89,7 @@ Open your browser at
 
 ```
 sheet-music-to-audio/
-├── audiveris/bin/audiveris.bat    # OMR engine  
+├── omr/bin/audiveris.bat          # OMR engine  
 ├── soundfont/FluidR3_GM.sf2       # General MIDI SoundFont  
 ├── templates/                     # HTML views  
 │   ├── index.html                 # Upload & instrument form  
