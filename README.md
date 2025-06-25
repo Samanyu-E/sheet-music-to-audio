@@ -47,14 +47,14 @@
 
 ## 🚀 Quick Start
 
-Clone the repo
+**Clone the repo**
 
 ```
 git clone https://github.com/Samanyu-E/sheet-music-to-audio.git
 cd sheet-music-to-audio
 ```
 
-Create & activate virtualenv
+**Create & activate virtualenv**
 
 ```
 python -m venv venv
@@ -68,7 +68,7 @@ python -m venv venv
   venv\Scripts\activate
   ```
 
-Install Python dependencies
+**Install Python dependencies**
 
 ```
 pip install -r requirements.txt
@@ -80,7 +80,7 @@ Verify external tools:
 * FluidSynth installed on your system
 * `FluidR3_GM.sf2` in `./soundfont/`
 
-Run the web server
+**Run the web server**
 
 ```
 python main.py
@@ -128,8 +128,6 @@ See [LICENSE](LICENSE) and [NOTICE](NOTICE) for details.
 3. Commit your changes: `git commit -m "Add your feature"`
 4. Push to your branch: `git push origin feat/your-feature`
 5. Open a Pull Request
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) (if added) for coding guidelines.
 
 ---
 
