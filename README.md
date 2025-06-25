@@ -1,96 +1,139 @@
-# sheet-music-to-audio
-- First uploaded: 06/22/2025
-- Last updated:   06/25/2025
-<p align="center">
-  <img src="docs/logo.png" alt="Sheet Music to Audio Logo" width="120" />
-  <h1 align="center">Sheet Music to Audio</h1>
-  <p align="center"><strong>Convert sheet-music images into playable audio</strong></p>
-  <p align="center">
-    <a href="https://github.com/your-username/sheet-music-to-audio/actions"><img src="https://img.shields.io/github/actions/workflow/status/your-username/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-  </p>
-</p>
+<p align="center">  
+  <img src="docs/logo.png" alt="Sheet Music to Audio Logo" width="200"/>  
+</p>  
+
+<h1 align="center">Sheet Music to Audio</h1>  
+
+<p align="center">  
+  <a href="https://github.com/Samanyu-E/sheet-music-to-audio/blob/main/LICENSE">  
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">  
+  </a>  
+  <a href="https://github.com/Samanyu-E/sheet-music-to-audio/actions">  
+    <img src="https://img.shields.io/github/actions/workflow/status/Samanyu-E/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status">  
+  </a>  
+  <a href="https://pypi.org/project/sheet-music-to-audio">  
+    <img src="https://img.shields.io/pypi/v/sheet-music-to-audio" alt="PyPI Version">  
+  </a>  
+</p>  
 
 ---
 
-![Demo](docs/demo.gif)  
-*Upload a photo or PDF of your score, pick an instrument, and download the rendered audio.*
+<p align="center">  
+  <img src="docs/demo.gif" alt="Demo" width="75%"/>  
+</p>  
+
+**Sheet Music to Audio** lets you upload an image or PDF of sheet music, choose a MIDI instrument, and download a high-quality WAV file—all via a web interface.
+
+---
+
+## 🔑 Features
+
+* **Optical Music Recognition**
+  Uses **Audiveris** to convert images/PDFs into MusicXML.
+
+* **MIDI Generation**
+  Parses MusicXML with **music21**, inserts your chosen General MIDI instrument.
+
+* **Audio Synthesis**
+  Renders `.wav` via **FluidSynth** and the **FluidR3\_GM** SoundFont.
+
+* **Instrument Picker**
+  Choose from **128** General MIDI instruments (piano, strings, brass, leads…).
+
+* **Responsive UI**
+  Mobile-friendly upload form and download page.
 
 ---
 
 ## 🚀 Quick Start
 
-```bash
-# 1. Clone and enter
-git clone https://github.com/your-username/sheet-music-to-audio.git
-cd sheet-music-to-audio
+Clone the repo
 
-# 2. Create & activate venv
+```
+git clone https://github.com/Samanyu-E/sheet-music-to-audio.git
+cd sheet-music-to-audio
+```
+
+Create & activate virtualenv
+
+```
 python -m venv venv
 # macOS/Linux
 source venv/bin/activate
 # Windows
 venv\Scripts\activate
+```
 
-# 3. Install Python deps
+Install Python dependencies
+
+```
 pip install -r requirements.txt
+```
 
-# 4. Ensure external tools:
-#    • Audiveris CLI in ./audiveris/bin/audiveris.bat
-#    • FluidSynth on your system & place FluidR3_GM.sf2 in ./soundfont/
+Verify external tools:
 
-# 5. Run the app
+* Audiveris CLI in `./audiveris/bin/audiveris.bat`
+* FluidSynth installed on your system
+* `FluidR3_GM.sf2` in `./soundfont/`
+
+Run the web server
+
+```
 python main.py
-```bash
-# 6. Open browser at:
-http://localhost:8000
-💡 Features
-Optical Music Recognition
-Uses Audiveris to convert images/PDFs into MusicXML.
+```
 
-MIDI Generation
-Parses MusicXML with music21 and applies your chosen MIDI instrument.
+Open your browser at
+[http://localhost:8000](http://localhost:8000)
 
-Audio Synthesis
-Renders .wav audio via FluidSynth and a General MIDI SoundFont.
+---
 
-Instrument Picker
-Choose from 128 General MIDI instruments (piano, strings, brass, etc.).
+## 🗂 Project Structure
 
-Clean UI
-Responsive upload form and download page.
-
-🗂 Project Structure
-bash
-Copy
-Edit
+```
 sheet-music-to-audio/
-├── audiveris/bin/audiveris.bat    # OMR engine
-├── soundfont/FluidR3_GM.sf2       # GM SoundFont
-├── main.py                        # Flask backend
-├── templates/
-│   ├── index.html                 # Upload form
-│   └── result.html                # Download page
-├── static/                        # (optional) CSS/JS
-├── uploads/                       # (gitignored) user uploads
-├── output/                        # (gitignored) generated audio
-├── requirements.txt               # Python dependencies
-├── LICENSE                        # MIT license
-└── NOTICE                         # Third-party attribution
-📜 License & Attribution
-This repo: MIT License © 2025 Samanyu Earna
+├── audiveris/bin/audiveris.bat    # OMR engine  
+├── soundfont/FluidR3_GM.sf2       # General MIDI SoundFont  
+├── templates/                     # HTML views  
+│   ├── index.html                 # Upload & instrument form  
+│   └── result.html                # Download page  
+├── static/                        # CSS/JS assets  
+├── uploads/                       # (gitignored) user uploads  
+├── output/                        # (gitignored) generated WAVs  
+├── main.py                        # Flask backend  
+├── requirements.txt               # Python dependencies  
+├── LICENSE                        # MIT license for this repo  
+└── NOTICE                         # Third-party attribution  
+```
 
-Audiveris: Apache License 2.0
+---
 
-FluidR3 GM SoundFont: CC BY-SA 3.0
+## 📜 License & Attribution
 
-See LICENSE and NOTICE for details.
+* **This repository**: MIT License © 2025 Samanyu Earna
+* **Audiveris**: Apache License 2.0
+* **FluidR3 GM SoundFont**: CC BY-SA 3.0
 
-🤝 Contributing
-Fork & clone
+See [LICENSE](LICENSE) and [NOTICE](NOTICE) for details.
 
-Create a branch: git checkout -b feat/your-feature
+---
 
-Commit changes & push
+## 🤝 Contributing
 
-Open a Pull Request
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit your changes: `git commit -m "Add your feature"`
+4. Push to your branch: `git push origin feat/your-feature`
+5. Open a Pull Request
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) (if added) for coding guidelines.
+
+---
+
+<p align="center">  
+  ⭐ If you find this project useful, please give it a star!  
+</p>  
+
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
