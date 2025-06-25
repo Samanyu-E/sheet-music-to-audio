@@ -5,15 +5,12 @@
 <h1 align="center">Sheet Music to Audio</h1>  
 
 <p align="center">  
-  <a href="https://github.com/Samanyu-E/sheet-music-to-audio/blob/main/LICENSE">  
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">  
-  </a>  
-  <a href="https://github.com/Samanyu-E/sheet-music-to-audio/actions">  
-    <img src="https://img.shields.io/github/actions/workflow/status/Samanyu-E/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status">  
-  </a>  
-  <a href="https://pypi.org/project/sheet-music-to-audio">  
-    <img src="https://img.shields.io/pypi/v/sheet-music-to-audio" alt="PyPI Version">  
-  </a>  
+  <a href="https://github.com/samanyu-e/sheet-music-to-audio/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/samanyu-e/sheet-music-to-audio/ci.yml?branch=main" alt="CI Status">
+  </a> 
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+  </a>
 </p>  
 
 ---
