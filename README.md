@@ -14,17 +14,20 @@
 
 ## 🔑 Features
 
-* **Optical Music Recognition**
+* **Flask Web Frontend**  
+  Simple and intuitive web interface for uploading sheet music and downloading audio.
+
+* **Optical Music Recognition**  
   Uses **Audiveris** to convert images/PDFs into MusicXML.
 
-* **MIDI Generation**
+* **Instrument Picker**  
+  Choose from **128** General MIDI instruments (piano, strings, brass, leads…) to play music in
+
+* **MIDI Generation**  
   Parses MusicXML with **music21**, inserts your chosen General MIDI instrument.
 
-* **Audio Synthesis**
-  Renders `.wav` via **FluidSynth** and the **FluidR3\_GM** SoundFont.
-
-* **Instrument Picker**
-  Choose from **128** General MIDI instruments (piano, strings, brass, leads…).
+* **Audio Synthesis**  
+  Renders `.wav` via **FluidSynth** and the **FluidR3_GM** SoundFont
 
 ---
 
@@ -82,14 +85,17 @@ Open your browser at
 sheet-music-to-audio/
 ├── omr/bin/audiveris.bat          # OMR engine  
 ├── soundfont/FluidR3_GM.sf2       # General MIDI SoundFont  
-├── templates/                     # HTML views  
+├── templates/                     # HTML pages  
 │   ├── index.html                 # Upload & instrument form  
 │   └── result.html                # Download page  
-├── static/                        # CSS/JS assets  
+├── work-in-prog/                  # Work in progress
+│   ├── img-enhance.py             # Working on image enhancement  
+│   └── PROGESS                    # Description
 ├── uploads/                       # (gitignored) user uploads  
 ├── output/                        # (gitignored) generated WAVs  
 ├── main.py                        # Flask backend  
-├── requirements.txt               # Python dependencies  
+├── requirements.txt               # Python dependencies
+├── README                         # Prgect Description
 ├── LICENSE                        # MIT license for this repo  
 └── NOTICE                         # Third-party attribution  
 ```
