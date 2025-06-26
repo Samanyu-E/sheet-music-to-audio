@@ -8,7 +8,7 @@
   <img src="docs/demo.gif" alt="Demo" width="75%"/>  
 </p>  
 
-**Sheet Music to Audio** lets you upload an image or one page PDF of sheet music, choose a MIDI instrument, and download a high-quality WAV file—all via a web interface.
+**Sheet Music to Audio** lets you upload an image or one page PDF of sheet music, choose a MIDI instrument, and download a high-quality WAV file via a web interface.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Starting with git clone
 
 **Clone the repo**
 
