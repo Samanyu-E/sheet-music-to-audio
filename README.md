@@ -62,8 +62,7 @@ pip install -r requirements.txt
 * Audiveris CLI in `./omr/bin/audiveris.bat`
 * pyfluidSynth installed on your system
 * `FluidR3_GM.sf2` in `./soundfont/`
-  Note: Due to file size limitations, the FluidR3_GM.sf2 file is not included in this repository.
-  Download [FluidR3_GM.sf2](https://member.keymusician.com/Member/FluidR3_GM/index.html)
+  * Note: Due to file size limitations, the FluidR3_GM.sf2 file is not included in this repository. Download [FluidR3_GM.sf2](https://member.keymusician.com/Member/FluidR3_GM/index.html) and place it in `./soundfont/` 
 
 **Run the web server**
 
