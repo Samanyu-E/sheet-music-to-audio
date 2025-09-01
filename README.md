@@ -1,6 +1,4 @@
-<p align="center">  
-  <img src="docs/logo.png" alt="Sheet Music to Audio Logo" width="200"/>  
-</p>  
+
 
 <h1 align="center">Sheet Music to Audio</h1>  
 
